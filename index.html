@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="include.js"></script>
+    <link rel="icon" href="favicon.png" type="image" sizes="16x16">
+    <script type="text/javascript" src="data.json"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    
+    <title>Arief Akbar Hidayat</title>
+</head>
+
+<body>
+  <div w3-include-html="top.html"></div> 
+    <script>
+      includeHTML();
+    </script>
+
+<!-- Visit https://codepen.io/nicolaskadis/full/brQEOd/ for the latest, no js version! -->
+<div class="container">
+  <center><h1>Experiences</h1></center>
+  <div class="row text-center" id="exp">
+  </div>
+  <br>
+  <center><h1> Certifications and Trainings</h1></center>
+  <div class="row text-center" id="cert">
+  </div>
+  <br>
+  <center><h1>Competitions and Portfolios</h1></center>
+  <div class="row text-center" id="port">
+  </div>
+  <br>
+
+</div>
+
+<script>
+/**skill='[\
+{"title" : "Programming", "name" : "Technical Skill","type": "Hard Skill","date":"","desc":"Python, Java, Sql, Javascript and Php","link":"#"},\
+{"title" : "Analytics", "name" : "Analyze Skill","type": "Hard Skill","date":"","desc":"Data Analysis, Data Engineering, Data Mining, Data Visualization","link":"#"},\
+{"title" : "Web Development", "name" : "Technical Skill","type": "Hard Skill","date":"","desc":"Html, Css, Bootstrap, Php","link":"#"},\
+{"title" : "Operating System", "name" : "Technical Skill","type": "Hard Skill","date":"","desc":"Linux (Ubuntu), Windows, Shell scripting","link":"#"},\
+{"title" : "Tools", "name" : "Technical Skill","type": "Hard Skill","date":"","desc":"Git, BigQuery, Colaboratory, Anaconda Navigator, Tableau, Rapid Miner, Pentaho, MySQL/MariadB, VS Code, PostgreSQL, Dbeaver, Navicat, MS Office, Spreadsheet","link":"#"},\
+{"title" : "Interpersonal Skill","name" : "Hard Skill","type": "Soft Skill","date":"","desc":"Communication, teamwork","link":"#"}\
+]';**/
+    var exp = JSON.parse(exp);  
+    flipcard(exp,"exp");
+    var cert = JSON.parse(cert);  
+    flipcard(cert,"cert");
+    var port = JSON.parse(port);  
+    flipcard(port,"port");
+  </script>
+
+</body>
+</html>
